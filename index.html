@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .swiper-container {
+            width: 1970px;
+            height: 850px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 600px;
+            height: 600px;
+
+        }
+
+        .Slide2 {
+            width: 1920px;
+            height: 1040px;
+            background-image:url(img/Slide2.jpg);
+            background-repeat:no-repeat;
+        }
+
+        body {
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tur img {
+            position: fixed;
+            z-index: 10;
+            bottom: 500px;
+            border-radius: 50%;
+            top: 0px;
+            left: 500px;
+            }
+
+        .nav {
+            width: 100%;
+            height: 70px;
+            background-image: url(img/nav-01.jpg);
+            position: fixed;
+            z-index: 9;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .links {
+            width: 700px;
+            height: 100%;
+            position: relative;
+            
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 9;
+
+        }
+
+        .link {
+            width: 200px;
+            height: 100%;
+            margin: 0px 5px 0px 5px;
+            justify-content: center;
+            text-align: center;
+            line-height: 70px;
+            color: rgb(255, 255, 255);
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .link:hover{
+            opacity: 0.3;   
+        }
+        
+
+        .banner {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .reason {
+            width: 100vw;
+            height: 100%;
+            background-image: url(img/reason.jpg);
+            
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        .reason1 {
+            width: 810px;
+            height: 1100px;
+
+        }
+
+        .re-3f {
+            width: 40%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+        }
+
+        table {
+            width: 800px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-start;
+            border-collapse: collapse;
+        }
+        .y{
+            width: 266px;
+            height: 40px;
+            border: 1px solid black;
+
+        }
+
+        .mi {
+            text-align: center;
+        }
+
+        .none {
+            border: 0px solid black;
+            display: flex;
+            justify-content: flex-start;
+            border-collapse: collapse;
+        }
+        .inline-block {
+            display: inline-block;
+            width: 800px;
+            height: 100px;
+            margin:50px ;
+            font-size: 20px;
+
+        }
+
+        .re-3-1 {
+            width: 50%;
+            height: 100%;
+            background-color: darkmagenta;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: -200px;
+
+        }
+        .re-up {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 100px;
+        }
+        .left {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(248, 245, 200);
+        }
+        .food {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( rgb(250, 228, 228), rgba(240, 194, 179, 0))
+        }
+        .food-up {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 100px;
+        }
+        .food-do {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .food-do1 {
+            width: 800px;
+            height: 266px;
+            display: flex;
+        }
+        .food-do2 {
+            width: 800px;
+            height: 266px;
+            display: flex;
+        }
+        .food-do3 {
+            width: 800px;
+            height: 266px;
+            display: flex;
+        }
+        .food-do1-1:hover{
+            opacity: 0.3;   
+        }
+        .food-do1-1{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .form {
+            width: 100%;
+            height: 1080px;
+            background-image: url(img/form1.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        .form-up {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 100px;
+        }
+        .form-do {
+            width: 100%;
+            height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+           
+        }
+
+        .image img {
+            width: 800px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .onsite{
+            width: 100%;
+            height: 980px;
+            background-image: url(img/onsite2.jpg);
+            background-repeat: no-repeat;
+            background-size: inherit;
+            
+        }
+
+        .on-do {
+            width: 100%;
+            height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .on-up {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 100px;
+        }
+
+        .do-up img{
+            width: 800px;
+            height: 400px;
+        }
+
+        .map {
+            width: 100%;
+            height: 800px;
+            background-color: rgb(243, 230, 230);
+            background-image: url(img/map2.jpg);
+            
+            
+        }
+        .map-up{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 100px;
+        }
+        .map-do{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+        }
+        .f{
+
+        }
+
+        
+        .w{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 0px;
+            padding: 10px;
+        }
+        .footer{
+            width: 100%;
+            height:50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(img/nav-01.jpg);
+            
+        }
+       .footer-do{
+           color: rgb(255, 255, 255);
+           line-height: 50px;
+
+       }
+       .point1{
+           width: 100%;
+           height: 50px;
+       }
+       .point2{
+           width: 100%;
+           height: 50px;
+       }
+       .point3{
+           width: 100%;
+           height: 50px;
+       }
+       .point4{
+           width: 100%;
+           height: 50px;
+       }
+       .point5{
+           width: 100%;
+           height: 50px;
+       }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="tur"><a href="#staw6"><img src="img/logo2.png" alt=""width=70px></a></div>
+    <div class="nav">
+        <div  class="nav"></div>
+        <div class="links">
+            <div class="link"><a href="#staw1"><img src="img/lk1-1.jpg"></a></div>
+            <div class="link"><a href="#staw2"><img src="img/lk2-1.jpg"></a></div>
+            <div class="link"><a href="#staw3"><img src="img/lk3-1.jpg"></a></div>
+            <div class="link"><a href="#staw4"><img src="img/lk4-1.jpg"></a></div>
+            <div class="link"><a href="#staw5"><img src="img/lk5-1.jpg"></a></div>
+        </div>
+
+    </div>
+    <div id="staw6"class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Slide 1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Slide 2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Slide 3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Slide 4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Slide 5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Slide 6.jpg" alt=""></div>
+
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+    </div>
+    <div id="staw1"class="point1"></div>
+    <div  class="re-up">莓好相遇</div>
+    <div class="reason">
+        <div class="reason1">
+            <table class="none">
+                <tr>
+                    <td>
+                        <h3>為什麼要開草莓園?</h3>
+                        老闆原本是傳產業的一般員工，成家後希望就近照顧年老的父母，於是回鄉創業，
+                        家鄉在苗栗大湖堪稱全台灣最美麗的草莓農場，這裡沒有喧鬧的假日車潮，只有恬
+                        靜的山城風情，整座山放眼望去，盡是群山美景，老闆就在位於大湖鄉和獅潭鄉的
+                        交界區，開啟了他的草莓園人生。
+                    </td>
+                    <td><img src="img/1.2.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/2-1.jpg"></td>
+                    <td>
+                        <h3>什麼是牛奶草莓?</h3>
+                        所謂的牛奶草莓真的是用牛奶澆灌生產的嗎?其實，所謂的牛奶草莓實際上是一個具
+                        有奶香味的草莓品種--『森研99號』是由遼寧省森林經營研究所脫毒培育的新品種
+                        ，該品種果實緻密多汁，香味濃郁，糖度高；果個大（最大果重130g），很受消費
+                        者喜愛，草莓具有的奶香味，是該草莓品種的特性，與牛奶一點關係都沒有哦！
+                        牛奶草莓作為現在非常出眾的水果品種， ，口味帶有奶香，並且甜而不膩，外觀
+                        上看，色澤比較清亮鮮艷。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>怎麼挑選好吃的草莓?</h3>
+                        採草莓時請挑選顏色鮮豔的草莓，顏色太白(白草莓除外)或是過青都是尚未成熟。草
+                        一旦離枝其成熟度就中止無法再催熟。
+                        草莓外表若有損傷就不容易存放且易腐壞，而草莓上的絨毛越長而且身上的小顆
+                        粒是立起來的，就代表越少人碰過，越新鮮。
+                        帶回家的草莓請不要立刻清洗，直接放入冰箱密封冷藏，需要吃多少再洗多少，
+                        建議在兩日內吃完即可。
+
+                    </td>
+                    <td><img src="img/3-2.jpg"></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+    <div class="food">
+        <div id="staw2"class="point2"></div>
+        <div id="staw2" class="food-up">莓品味</div>
+        <div class="food-do">
+            <div class="food-do1">
+                <div class="food-do1-1"><img src="img/food1-1.jpg" alt=""></div></a>
+                <div class="food-do1-1"><img src="img/food1-2.jpg" alt=""></div>
+                <div class="food-do1-1"><img src="img/food1-3.jpg" alt=""></div>
+            </div>
+            <div class="food-do2">
+                <div class="food-do1-1"><img src="img/food2-1.jpg" alt=""></div>
+                <div class="food-do1-1"><img src="img/food2-2.jpg" alt=""></div>
+                <div class="food-do1-1"><img src="img/food2-3.jpg" alt=""></div>
+            </div>
+            <div class="food-do3">
+                <div class="food-do1-1"><img src="img/food3-1.jpg" alt=""></div>
+                <div class="food-do1-1"><img src="img/food3-2.jpg" alt=""></div>
+                <div class="food-do1-1"><img src="img/food3-3.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div id="staw3"class="point3"></div>
+        <div id="staw3" class="form-up">莓味時光</div>
+        <div class="form-do">
+            <div class="table2">
+                <table class="mi">
+                    <tr>
+                        <td class="y">期數</td>
+                        <td class="y">月份</td>
+                        <td class="y">備註</td>
+                    </tr>
+                    <tr>
+                        <td class="y">第一期</td>
+                        <td class="y">12月~2月</td>
+                        <td class="y">品質最好
+                    <tr>
+                        <td class="y">第二期</td>
+                        <td class="y">2月~3月</td>
+                        <td class="y">果實最大
+                            草莓是所有草莓季中最受歡迎的
+                            (價格也最貴)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="y">第三期</td>
+                        <td class="y">3月</td>
+                        <td class="y"></td>
+                    </tr>
+                    <tr>
+                        <td class="y">第四期</td>
+                        <td class="y">4月</td>
+                        <td class="y">價格最實惠</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="inline-block">台北內湖的草莓產期比大湖來得早，而南部部分草莓園的
+                產期更是長達半年喔！一般來說，每年12月中下旬到隔年4月中，都會進入草莓的採
+                收期，12～1月人潮較少，採的草莓也可以保存最久；2～3月的草莓最大顆，也最甜，
+                所以人潮通常較多；到了4月，因為天氣變暖，已經進入草莓季的尾聲，加上好的草
+                莓可能都已經被採光了，所以此時採草莓相對的會比較便宜，但草莓量也會較少。
+                建議大家可以參照【大湖草莓季採草莓即時情報】知道最新的莓況，也可以事先打
+                電話到草莓園詢問，一方面可以先了解價錢，也可以詢問果實概況和天氣，才不會
+                到了現場發現跟自己想的不一樣！
+            </div>
+        </div>
+    </div>
+    <div class="onsite">
+        <div id="staw4"class="point4"></div>
+        <div id="staw4" class="on-up">採莓趣</div>
+        <div class="on-do">
+            <div class="do-up">
+                <img src="img/do-up-01.jpg" alt="">
+
+
+            </div>
+            <div class="inline-block">許多人採草莓的時候，都會挑大顆的採，其實，雖然體型較大的
+                草莓賣相較好，但甜度卻不比上較小的草莓，建議挑選大小剛好、適中的草莓，才
+                是最甜的。簡單一點的判別方法就是，盡量採50元硬幣大小的草莓，但如果小於1
+                0元硬幣以下就不要採了；建議可以拿一個50元硬幣放在手掌上比對。
+                如果就是喜歡比較大顆的草莓，在這裡也提供一個尋找大草莓的小撇步──通常真正
+                巨無霸的草莓都會躲在大葉子底下，建議可以把大葉子翻起來尋找，或許就會有意
+                想不到的收穫喔！
+                不過，也要提醒大家，摘採前可以先輕輕地把草莓轉一下，觀察草莓全身，如果還
+                有沒紅透的地方，就不要採了！因為沒有紅透的綠草莓，代表還沒有成熟，吃起來
+                會很酸，建議放回去，讓它慢慢長大。
+                假如發現草莓身上有斑點，也建議放回去，因為這顆草莓已經生病了！如果草莓有
+                凹洞，代表可能被蛞蝓吃過，也不要採。另外，有白色草莓花的代表還會結草莓，
+                不要把花剪掉。
+
+
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <div id="staw5"class="point5"></div>
+        <div id="staw5"class="map-up">聯絡我們</div>
+        <div class="map-do">
+            <div class="f">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d
+                7262.824865113905!2d120.88190733280557!3d24.471162766775763!2m3!1f0!
+                2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469aaafd1a40a67%3A0x725
+                0f772383b066!2z542F5r2t5bm456aP54mb5aW26I2J6I6T5ZyS!5e0!3m2!1szh-TW!2
+                stw!4v1617076595328!5m2!1szh-TW!2stw" width="500" height="300" style=
+                "border:0;" allowfullscreen="" loading="lazy" ></iframe></div>
+            <div class="w">
+                <p>電話：0937137483 黃老闆</p>
+                <p>地址：苗栗縣獅潭鄉竹木村北庄4鄰1號</p>
+                <p>FB:獅潭牛奶草莓園</p>
+                <p>營業時間:早上08:00-下午17:00</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-up"></div>
+        <div class="footer-m"></div>
+        <div class="footer-do">Copyright © 2021 獅潭牛奶草莓園 . All rights reserved.</div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+
+</html>
