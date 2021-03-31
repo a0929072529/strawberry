@@ -83,7 +83,12 @@
             z-index: 9;
             display: flex;
             justify-content: center;
-
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        
+        .nav:hover{
+            opacity: 1;   
         }
 
         .links {
@@ -123,9 +128,8 @@
 
         .reason {
             width: 100vw;
-            height: 100%;
+            height: 900px;
             background-image: url(img/reason.jpg);
-            
             display: flex;
             justify-content: center;
             
@@ -365,14 +369,17 @@
        .point1{
            width: 100%;
            height: 50px;
+           background-color: rgb(255, 255, 255);
        }
        .point2{
            width: 100%;
            height: 50px;
+           background-color: rgb(248, 233, 233);
        }
        .point3{
            width: 100%;
            height: 50px;
+           background-color: rgb(255, 255, 255);
        }
        .point4{
            width: 100%;
@@ -381,6 +388,9 @@
        .point5{
            width: 100%;
            height: 50px;
+       }
+       .word{
+           padding: 0px 10px;
        }
 
 
@@ -429,7 +439,7 @@
         <div class="reason1">
             <table class="none">
                 <tr>
-                    <td>
+                    <td class="word">
                         <h3>為什麼要開草莓園?</h3>
                         老闆原本是傳產業的一般員工，成家後希望就近照顧年老的父母，於是回鄉創業，
                         家鄉在苗栗大湖堪稱全台灣最美麗的草莓農場，這裡沒有喧鬧的假日車潮，只有恬
@@ -440,7 +450,7 @@
                 </tr>
                 <tr>
                     <td><img src="img/2-1.jpg"></td>
-                    <td>
+                    <td class="word">
                         <h3>什麼是牛奶草莓?</h3>
                         所謂的牛奶草莓真的是用牛奶澆灌生產的嗎?其實，所謂的牛奶草莓實際上是一個具
                         有奶香味的草莓品種--『森研99號』是由遼寧省森林經營研究所脫毒培育的新品種
@@ -451,7 +461,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="word"> 
                         <h3>怎麼挑選好吃的草莓?</h3>
                         採草莓時請挑選顏色鮮豔的草莓，顏色太白(白草莓除外)或是過青都是尚未成熟。草
                         一旦離枝其成熟度就中止無法再催熟。
@@ -538,7 +548,7 @@
     </div>
     <div class="onsite">
         <div id="staw4"class="point4"></div>
-        <div id="staw4" class="on-up">採莓趣</div>
+        <div id="staw4" class="on-up"></div>
         <div class="on-do">
             <div class="do-up">
                 <img src="img/do-up-01.jpg" alt="">
